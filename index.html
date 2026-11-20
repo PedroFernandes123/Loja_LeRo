@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeRo Atelier | Curadoria de Desapego Feminino — Roupas, Sapatos &amp; Acessórios</title>
+  <meta name="description" content="LeRo Atelier: boutique de desapego feminino de luxo com curadoria autoral em estética noir &amp; ametista. Peças únicas entre roupas, sapatos e acessórios higienizados e autenticados." />
+
+  <!-- Google Fonts: Cormorant Garamond, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Announcement -->
+  <div class="top-announcement" id="announcement-bar">
+    <span>Curadoria Circular Feminina</span>
+    <span class="dot" aria-hidden="true"></span>
+    <span>Peças únicas autenticadas &amp; higienizadas</span>
+    <span class="dot" aria-hidden="true"></span>
+    <span>Frete grátis acima de R$ 280 para todo o Brasil</span>
+  </div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="navbar" id="main-navbar">
+    <div class="container navbar-inner">
+      <a href="#inicio" class="brand-logo" id="nav-brand-link" aria-label="LeRo Atelier - Página Inicial">
+        <span class="brand-wordmark">Le<em>Ro</em></span>
+        <span class="brand-sub">Archive &amp; Desapego</span>
+      </a>
+
+      <nav aria-label="Menu Principal">
+        <ul class="nav-links" id="nav-menu-list">
+          <li>
+            <button type="button" class="nav-link active" id="nav-filter-all" data-nav-category="all">
+              Acervo Completo
+            </button>
+          </li>
+          <li>
+            <button type="button" class="nav-link" id="nav-filter-roupas" data-nav-category="roupas">
+              Roupas
+            </button>
+          </li>
+          <li>
+            <button type="button" class="nav-link" id="nav-filter-sapatos" data-nav-category="sapatos">
+              Sapatos
+            </button>
+          </li>
+          <li>
+            <button type="button" class="nav-link" id="nav-filter-acessorios" data-nav-category="acessorios">
+              Acessórios
+            </button>
+          </li>
+          <li>
+            <a href="#curadoria" class="nav-link" id="nav-link-curadoria">Curadoria</a>
+          </li>
+          <li>
+            <a href="#desapegue" class="nav-link" id="nav-link-desapegue">Vender Peça</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="nav-search-box">
+          <svg class="nav-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input
+            type="search"
+            id="navbar-search-input"
+            class="nav-search-input"
+            placeholder="Buscar peça, tecido..."
+            aria-label="Buscar peças no acervo LeRo"
+          />
+        </div>
+
+        <button type="button" class="icon-btn" id="nav-open-chat-btn" aria-label="Abrir Assistente LeRo">
+          <span>Concierge</span>
+        </button>
+
+        <button type="button" class="icon-btn" id="nav-bag-toggle-btn" aria-label="Abrir Sacola de Compras">
+          <span>Sacola</span>
+          <span class="badge-count" id="bag-count-badge">0</span>
+        </button>
+
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Alternar menu mobile">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- Hero Editorial Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-kicker">Coleção Nocturne • Edição de Arquivo 04</span>
+          <h1 class="hero-title" id="hero-heading">
+            Elegância circular em <em>veludo, couro e ametista</em>.
+          </h1>
+          <p class="hero-lead">
+            A LeRo é um acervo feminino de desapego curado peça a peça. Roupas de alfaiataria, calçados esculturais e acessórios atemporais inspecionados manualmente para ganhar um novo ciclo no seu guarda-roupa.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#catalogo" class="btn-primary" id="hero-explore-btn">
+              Explorar Acervo
+            </a>
+            <button type="button" class="btn-secondary" id="hero-ask-concierge-btn">
+              Consultar Medidas no Chat
+            </button>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <strong>100% Único</strong>
+              <span>Apenas 1 exemplar por peça</span>
+            </div>
+            <div class="metric-item">
+              <strong>Triagem 12 Pontos</strong>
+              <span>Costura, tecido e autenticidade</span>
+            </div>
+            <div class="metric-item">
+              <strong>Envio em 24h</strong>
+              <span>Embalagem perfumada reutilizável</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-frame">
+            <img
+              src="assets/images/hero.jpg"
+              alt="Editorial LeRo Atelier: mulher vestindo blazer estruturado preto com drapeado em seda ameixa e joias em prata"
+              width="960"
+              height="600"
+            />
+            <div class="hero-caption-card">
+              <div class="hero-caption-text">
+                <small>Destaque da Curadoria</small>
+                <p>Alfaiataria Nocturne &amp; Seda Ameixa</p>
+              </div>
+              <a href="#catalogo" class="add-bag-btn" id="hero-card-cta">Ver Peças</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog-section" id="catalogo" aria-labelledby="catalog-heading">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-subtitle">Garimpo Autoral Feminino</p>
+            <h2 class="section-title" id="catalog-heading">Acervo Disponível</h2>
+          </div>
+          <p id="catalog-count-label" class="section-subtitle">Exibindo 10 peças únicas</p>
+        </div>
+
+        <!-- Filter & Sorting Toolbar -->
+        <div class="catalog-toolbar" role="region" aria-label="Filtros do catálogo">
+          <div class="category-tabs" role="tablist">
+            <button type="button" class="filter-tab active" id="tab-all" data-category="all">
+              Todas (10)
+            </button>
+            <button type="button" class="filter-tab" id="tab-roupas" data-category="roupas">
+              Roupas (4)
+            </button>
+            <button type="button" class="filter-tab" id="tab-sapatos" data-category="sapatos">
+              Sapatos (3)
+            </button>
+            <button type="button" class="filter-tab" id="tab-acessorios" data-category="acessorios">
+              Acessórios (3)
+            </button>
+          </div>
+
+          <div class="filter-controls">
+            <select id="condition-filter-select" class="select-input" aria-label="Filtrar por estado de conservação">
+              <option value="all">Condição: Todas</option>
+              <option value="Impecável (Mint)">Impecável (Mint)</option>
+              <option value="Nunca Usado (Com Etiqueta)">Nunca Usado</option>
+              <option value="Excelente">Excelente</option>
+            </select>
+
+            <select id="sort-select" class="select-input" aria-label="Ordenar peças">
+              <option value="featured">Ordenar: Destaques da Curadoria</option>
+              <option value="price-asc">Menor Preço</option>
+              <option value="price-desc">Maior Preço</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Dynamic Product Grid -->
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Curatorship Pillars -->
+    <section class="curatorship-section" id="curadoria" aria-labelledby="curadoria-heading">
+      <div class="container">
+        <p class="section-subtitle">Padrão Técnico de Qualidade</p>
+        <h2 class="section-title" id="curadoria-heading">Como funciona nossa curadoria circular</h2>
+
+        <div class="pillars-grid">
+          <article class="pillar-card">
+            <span class="pillar-number">01 / TRIAGEM TÊXTIL</span>
+            <h3>Inspeção de Fibra &amp; Acabamento</h3>
+            <p>
+              Avaliamos gramatura, integridade de forros, zíperes, solados e metais. Apenas peças em estado Excelente, Impecável (Mint) ou Nunca Usadas entram no catálogo LeRo.
+            </p>
+          </article>
+
+          <article class="pillar-card">
+            <span class="pillar-number">02 / HIGIENIZAÇÃO OZÔNIO</span>
+            <h3>Pronta para Vestir</h3>
+            <p>
+              Cada roupa, calçado e acessório passa por higienização profissional a seco e vaporização antes de ser fotografado e embalado em nosso atelier.
+            </p>
+          </article>
+
+          <article class="pillar-card">
+            <span class="pillar-number">03 / MEDIDAS REAIS EM CM</span>
+            <h3>Transparência de Caimento</h3>
+            <p>
+              Além da etiqueta original, medimos busto, cintura, comprimento, palmilha em centímetros e altura de salto para garantir compra segura sem surpresas.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consignment / Sell With Us -->
+    <section class="consign-section" id="desapegue" aria-labelledby="consign-heading">
+      <div class="container">
+        <div class="consign-box">
+          <div>
+            <p class="section-subtitle">Moda Circular Inteligente</p>
+            <h2 class="section-title" id="consign-heading">Tem peças incríveis paradas no closet?</h2>
+            <p class="hero-lead" style="margin-top: 0.9rem; margin-bottom: 1.6rem;">
+              Garimpamos roupas femininas, sapatos em couro ou camurça e acessórios de design em ótimo estado. Você recebe até 70% do valor líquido após a venda ou crédito imediato com bônus no acervo LeRo.
+            </p>
+            <button type="button" class="btn-primary" id="consign-open-chat-btn">
+              Simular Avaliação no Concierge
+            </button>
+          </div>
+
+          <ul class="consign-steps">
+            <li class="consign-step">
+              <strong>1. Pré-Triagem Digital</strong>
+              <span>Envie fotos e marcas das peças para nossa curadoria avaliar aderência ao estilo LeRo.</span>
+            </li>
+            <li class="consign-step">
+              <strong>2. Produção &amp; Precificação</strong>
+              <span>Higienizamos, medimos, fotografamos em estúdio e publicamos no acervo oficial.</span>
+            </li>
+            <li class="consign-step">
+              <strong>3. Repasse Transparente</strong>
+              <span>Pagamento via PIX em até 5 dias úteis após a confirmação de entrega à compradora.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shopping Bag Drawer -->
+  <div class="drawer-backdrop" id="bag-backdrop" aria-hidden="true"></div>
+  <aside class="bag-drawer" id="bag-drawer" aria-label="Sacola de Compras">
+    <div class="drawer-header">
+      <h2>Sua Sacola LeRo</h2>
+      <button type="button" class="chat-close-btn" id="bag-close-btn" aria-label="Fechar sacola">✕</button>
+    </div>
+    <div class="drawer-body" id="bag-items-container"></div>
+    <div class="drawer-footer">
+      <div class="bag-total-row">
+        <span>Total Estimado</span>
+        <strong id="bag-total-price">R$ 0,00</strong>
+      </div>
+      <p id="bag-shipping-note" style="font-size: 0.76rem; color: var(--orchid-soft); margin-bottom: 0.9rem;">
+        Adicione peças únicas para reservar no seu pedido.
+      </p>
+      <button type="button" class="btn-primary" id="bag-checkout-btn" style="width: 100%;">
+        Finalizar Reserva (PIX / Cartão)
+      </button>
+    </div>
+  </aside>
+
+  <!-- Deterministic Local Chatbot + Strict Guardrail Engine (Zero LLM / Zero External API) -->
+  <button
+    type="button"
+    class="chatbot-launcher"
+    id="chatbot-launcher-btn"
+    aria-expanded="false"
+    aria-controls="chatbot-panel"
+  >
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+    </svg>
+    <span>Concierge LeRo</span>
+  </button>
+
+  <section
+    class="chatbot-panel"
+    id="chatbot-panel"
+    role="dialog"
+    aria-label="Concierge Virtual LeRo com Guardrail de Escopo"
+  >
+    <header class="chat-header">
+      <div class="chat-agent-info">
+        <div class="chat-avatar" aria-hidden="true">LR</div>
+        <div class="chat-agent-title">
+          <h3>Concierge LeRo</h3>
+          <span class="chat-guardrail-badge">Motor Local Determinístico • Guardrail Ativo</span>
+        </div>
+      </div>
+      <button type="button" class="chat-close-btn" id="chatbot-close-btn" aria-label="Minimizar chat">✕</button>
+    </header>
+
+    <div class="chat-security-banner">
+      <span>ESCOPO EXCLUSIVO: LOJA LERO</span>
+      <span>SEM LLM • 100% OFFLINE</span>
+    </div>
+
+    <div class="chat-messages" id="chat-messages-list" aria-live="polite"></div>
+
+    <div class="chat-quick-chips" aria-label="Sugestões rápidas da loja">
+      <button type="button" class="chat-chip" data-chip-query="Quais roupas estão disponíveis?">Roupas</button>
+      <button type="button" class="chat-chip" data-chip-query="Quais sapatos e botas vocês têm?">Sapatos</button>
+      <button type="button" class="chat-chip" data-chip-query="Mostre os acessórios, bolsas e colares">Acessórios</button>
+      <button type="button" class="chat-chip" data-chip-query="Como funciona a tabela de medidas e tamanhos?">Medidas</button>
+      <button type="button" class="chat-chip" data-chip-query="Qual o valor do frete e prazo de entrega?">Frete &amp; Envio</button>
+      <button type="button" class="chat-chip" data-chip-query="Quais as formas de pagamento e desconto no PIX?">Pagamento</button>
+      <button type="button" class="chat-chip" data-chip-query="Como funciona a política de troca e devolução?">Trocas</button>
+      <button type="button" class="chat-chip" data-chip-query="Quero vender ou desapegar uma peça minha">Vender Peça</button>
+    </div>
+
+    <form class="chat-input-area" id="chat-form" autocomplete="off">
+      <input
+        type="text"
+        id="chat-user-input"
+        class="chat-input"
+        placeholder="Pergunte sobre roupas, sapatos, medidas, frete..."
+        aria-label="Mensagem para o Concierge LeRo"
+        maxlength="240"
+      />
+      <button type="submit" class="chat-send-btn" id="chat-submit-btn">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 0.75rem;">
+            <span class="brand-wordmark">Le<em>Ro</em></span>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); max-width: 34ch;">
+            Boutique digital de desapego feminino com estética autoral em preto obsidiana e roxo ametista. Moda circular com rigor de atelier.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categorias</h4>
+          <ul>
+            <li><button type="button" data-footer-cat="roupas">Roupas de Arquivo</button></li>
+            <li><button type="button" data-footer-cat="sapatos">Sapatos &amp; Botas</button></li>
+            <li><button type="button" data-footer-cat="acessorios">Bolsas, Joias &amp; Óculos</button></li>
+            <li><button type="button" data-footer-cat="all">Ver Todo o Catálogo</button></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Atendimento</h4>
+          <ul>
+            <li><a href="#curadoria">Padrão de Higienização</a></li>
+            <li><a href="#desapegue">Como Vender sua Peça</a></li>
+            <li><button type="button" id="footer-open-chat-btn">Concierge &amp; Medidas</button></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Arquitetura do Chat</h4>
+          <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.55;">
+            Assistente 100% determinístico executado no navegador (Zero LLM e Zero API externa) protegido por Guardrail estrito de domínio exclusivo da loja LeRo.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 LeRo Atelier — Desapego Feminino Curado. Todos os direitos reservados.</span>
+        <span>Estética Noir &amp; Ametista • GitHub Pages Edition</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
